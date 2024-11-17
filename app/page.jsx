@@ -101,7 +101,7 @@ export default function Home() {
         <div className="mt-[3.5rem] px-10 flex justify-center items-center max-h-fit w-[100%] flex-col">
           <h1 className="text-[2rem] lg:text-[4rem] font-bold text-white text-center">Find the perfect web Address <br /> to start your business</h1>
           <div className="max-w-fit min-w-fit max-h-fit flex justify-center items-center mt-10 bg-[#F6F7F8] rounded-lg py-2 px-4 ">
-            <input type="text" name="" id="" className="min-w-[40%] sm:min-w-fit lg:min-w-[30rem] h-[2.5rem] pl-3 pr-10 border-none outline-none bg-transparent" placeholder="Find domain in the Databse" />
+            <input type="text" name="" id="" className="w-[12rem] md:min-w-[40%] sm:min-w-fit lg:min-w-[30rem] h-[2.5rem] pl-3 pr-10 border-none outline-none bg-transparent" placeholder="Find domain in the Databse" />
             <button className="bg-[#0077B5] text-white w-[8rem] h-[2.6rem] rounded-md text-sm">Search Now</button>
           </div>
         </div>
