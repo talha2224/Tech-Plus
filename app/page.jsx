@@ -295,13 +295,13 @@ export default function Home() {
 
       <div className="py-10 px-10 flex justify-between items-center mt-[0rem] border-t flex-wrap">
 
-        <p>© 2024 Jones.com</p>
+        <p className="mt-2">© 2024 Jones.com</p>
 
-        <p>Do Not Sell or Share My Personal Information</p>
+        <p className="mt-2">Do Not Sell or Share My Personal Information</p>
 
 
 
-        <div className="hidden md:flex items-center gap-x-6 max-h-fit max-w-fit min-w-fit justify-end">
+        <div className="flex items-center gap-x-6 max-h-fit max-w-fit min-w-fit justify-end mt-2">
         <FaFacebookSquare />
 
           <FaLinkedin/>
