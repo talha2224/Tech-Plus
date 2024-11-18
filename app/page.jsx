@@ -4,14 +4,10 @@ import Card2 from '../public/asessts/card2.svg'
 import Card3 from '../public/asessts/card3.svg'
 import Avatar from '../public/asessts/avatar.svg'
 import Char from '../public/asessts/char.svg'
-
-import { GiHamburgerMenu } from "react-icons/gi";
 import { TiTick } from "react-icons/ti";
 import { FaStar } from "react-icons/fa6";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -75,26 +71,7 @@ export default function Home() {
       {/* NAVBAR AND HERO  */}
       <div style={{ backgroundImage: `url('/asessts/Header.png')` }} className="bg-no-repeat w-[100vw] bg-cover h-[100vh] -z-20 pb-16">
 
-
-        {/* NAVBAR  */}
-        <div className="py-5 px-10 flex justify-between items-center max-h-fit">
-
-          <div className="max-h-fit">
-            <h1 className="text-[1.5rem] text-white font-bold max-h-fit">Jones.com</h1>
-          </div>
-
-          <div className="hidden md:flex items-center gap-x-6 max-h-fit max-w-fit min-w-fit justify-end">
-            <p className="text-white max-w-fit min-w-fit max-h-fit cursor-pointer">Home</p>
-            <p className="text-white max-w-fit min-w-fit max-h-fit cursor-pointer">Buy</p>
-            <p className="text-white max-w-fit min-w-fit max-h-fit cursor-pointer">Sell</p>
-            <p className="text-white max-w-fit min-w-fit max-h-fit mr-3 cursor-pointer">FAQ</p>
-            <button className="text-[#0077B5] bg-white w-[8rem] h-[2.3rem] rounded-md">Singup</button>
-          </div>
-
-          <GiHamburgerMenu className='md:hidden block text-white' />
-
-
-        </div>
+        <Navbar />
 
         {/* HERO  */}
 
@@ -241,7 +218,7 @@ export default function Home() {
               <div key={i.name} className="w-[100%] sm:m-0 m-3 sm:min-w-[15rem] sm:max-w-[15rem] min-h-[15rem] rounded-md bg-white shadow-md my-2 border px-3 pt-6">
 
                 <div className="flex items-start gap-x-3">
-                  <Image src={i.image} alt="" />
+                  <Image src={i.image} alt="card" />
                   <div>
                     <p className="font-medium mb-1 h-[1rem]">{i.name}</p>
                     <p className="text-[#8184A1] text-sm">{i.role}</p>
@@ -262,7 +239,7 @@ export default function Home() {
           }
 
           <div className="absolute top-0 left-0 sm:left-10 -z-50">
-            <Image src={Char} alt="" />
+            <Image src={Char} alt="card" />
           </div>
 
         </div>
@@ -271,53 +248,8 @@ export default function Home() {
 
 
       {/* FOOTER  */}
+      <Footer/>
 
-
-      <div className="py-5 px-10 flex justify-between items-center mt-[3rem]">
-
-        <div className="max-h-fit">
-          <h1 className="text-[1.5rem] text-[#0077B5] font-bold max-h-fit">Jones.com</h1>
-        </div>
-
-        <div className="hidden md:flex items-center gap-x-6 max-h-fit max-w-fit min-w-fit justify-end">
-          <p className="text-[#0077B5] max-w-fit min-w-fit max-h-fit cursor-pointer">Home</p>
-          <p className="text-[#0077B5] max-w-fit min-w-fit max-h-fit cursor-pointer">Buy</p>
-          <p className="text-[#0077B5] max-w-fit min-w-fit max-h-fit cursor-pointer">Sell</p>
-          <p className="text-[#0077B5] max-w-fit min-w-fit max-h-fit mr-3 cursor-pointer">FAQ</p>
-          <button className="text-[#fff] bg-[#0077B5] w-[8rem] h-[2.3rem] rounded-md">Singup</button>
-        </div>
-
-        <GiHamburgerMenu className='md:hidden block text-white' />
-
-
-      </div>
-
-
-      <div className="py-10 px-10 flex justify-between items-center mt-[0rem] border-t flex-wrap">
-
-        <p className="mt-2">© 2024 Jones.com</p>
-
-        <p className="mt-2">Do Not Sell or Share My Personal Information</p>
-
-
-
-        <div className="flex items-center gap-x-6 max-h-fit max-w-fit min-w-fit justify-end mt-2">
-        <FaFacebookSquare />
-
-          <FaLinkedin/>
-          <FaTwitter/>
-          <FaInstagram/>
-        </div>
-
-
-      </div>
-
-
-
-
-
-
-      <div className="mt-[10rem]"></div>
 
 
     </div>
