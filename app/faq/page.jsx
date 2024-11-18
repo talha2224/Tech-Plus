@@ -50,7 +50,7 @@ const Page = () => {
 
     <div className='relative'>
 
-      <Navbar color={"#0077B5"} btnBg={"#0077B5"} btnColor={"#fff"} />
+      <Navbar color={"#0077B5"} btnBg={"#0077B5"} btnColor={"#fff"} hamburgerColor={"#000"} />
 
 
       <div className='absolute top-[0] right-0 -z-40'>

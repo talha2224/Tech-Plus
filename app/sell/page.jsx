@@ -14,7 +14,7 @@ const page = () => {
 
     <div>
 
-      <Navbar color={"#0077B5"} btnBg={"#0077B5"} btnColor={"#fff"} />
+      <Navbar color={"#0077B5"} btnBg={"#0077B5"} btnColor={"#fff"} hamburgerColor={"#000"} />
 
 
 

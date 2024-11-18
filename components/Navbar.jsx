@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
-const Navbar = ({color="#fff",btnBg="#ffff",btnColor="#0077B5"}) => {
+const Navbar = ({color="#fff",btnBg="#ffff",btnColor="#0077B5",hamburgerColor="#fff"}) => {
     return (
         <div className="py-5 px-10 flex justify-between items-center max-h-fit">
 
@@ -18,7 +18,7 @@ const Navbar = ({color="#fff",btnBg="#ffff",btnColor="#0077B5"}) => {
                 <button style={{backgroundColor:btnBg}} className={`text-[${btnColor}] w-[8rem] h-[2.3rem] rounded-md`}>Singup</button>
             </div>
 
-            <GiHamburgerMenu className='md:hidden block text-white' />
+            <GiHamburgerMenu className={`md:hidden block text-[${hamburgerColor}]`} />
 
 
         </div>
