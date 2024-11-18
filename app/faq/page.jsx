@@ -6,7 +6,7 @@ import Vector from '../../public/asessts/vector.svg'
 import Image from 'next/image'
 import { RiArrowDropDownLine } from "react-icons/ri";
 
-const page = () => {
+const Page = () => {
 
 
 
@@ -125,4 +125,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
