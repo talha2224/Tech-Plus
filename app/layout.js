@@ -1,11 +1,12 @@
-import { Poppins } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
-  subsets: ["latin"], // Specify character subsets
-  weight: ["400", "700"], // Include only the required weights
-  variable: "--font-poppins", // CSS variable for custom use
+const workSans = Work_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-work-sans',
 });
+
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} antialiased`}>
+      <body className={`${workSans.variable} antialiased`}>
         {children}
       </body>
     </html>

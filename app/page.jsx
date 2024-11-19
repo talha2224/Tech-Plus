@@ -75,7 +75,7 @@ export default function Home() {
 
         {/* HERO  */}
 
-        <div className="mt-[3.5rem] px-10 flex justify-center items-center max-h-fit w-[100%] flex-col">
+        <div className="mt-[3.5rem] sm:px-10 px-3 flex justify-center items-center max-h-fit w-[100%] flex-col">
           <h1 className="text-[2rem] lg:text-[4rem] font-bold text-white text-center">Find the perfect web Address <br /> to start your business</h1>
           <div className="max-w-fit min-w-fit max-h-fit flex justify-center items-center mt-10 bg-[#F6F7F8] rounded-lg py-2 px-4 ">
             <input type="text" name="" id="" className="w-[12rem] md:min-w-[40%] sm:min-w-fit lg:min-w-[30rem] h-[2.5rem] pl-3 pr-10 border-none outline-none bg-transparent" placeholder="Find domain in the Databse" />
@@ -89,11 +89,11 @@ export default function Home() {
 
       {/* CARDS  */}
 
-      <div className="px-10 pb-10 z-50 mt-[-10rem]">
+      <div className="sm:px-10 px-3 pb-10 z-50 mt-[-10rem]">
 
-        <div className="flex justify-evenly items-center flex-wrap">
+        <div className="flex sm:justify-evenly items-center flex-wrap">
 
-          <div className="bg-[#E9EBED66] rounded-xl p-5 sm:min-w-[30rem] sm:max-w-[30rem]">
+          <div className="bg-[#E9EBED66] rounded-xl p-5 sm:min-w-[30rem] sm:max-w-[30rem] ">
             <h1 className="text-xl font-medium">Transparency first</h1>
             <p className="text-sm text-[#212833] mt-2">No hidden costs. No complicated math. You’ll never be in the dark, whether you’re buying or selling.</p>
 
@@ -205,17 +205,17 @@ export default function Home() {
 
       {/* TESTIMONIALS  */}
 
-      <div className="mt-[4rem] flex justify-center items-center flex-col">
+      <div className="mt-[4rem] flex justify-center items-center flex-col relative">
         <h1 className="text-[2rem] font-medium">What Our User Say</h1>
         <p className="text-[#3a4270] mt-2 text-sm">Would you like to add your review? </p>
 
 
-        <div className="flex- gap-x-6 w-[100%] flex justify-center items-end mt-[3rem] flex-wrap relative">
+        <div className="flex- gap-x-6 w-[100%] flex md:justify-center items-end mt-[3rem] overflow-x-auto">
 
           {
             userData.map((i) => (
 
-              <div key={i.name} className="w-[100%] sm:m-0 m-3 sm:min-w-[15rem] sm:max-w-[15rem] min-h-[15rem] rounded-md bg-white shadow-md my-2 border px-3 pt-6">
+              <div key={i.name} className="sm:m-0 m-3 min-w-[15rem] max-w-[15rem] min-h-[15rem] rounded-md bg-white shadow-md my-2 border px-3 pt-6">
 
                 <div className="flex items-start gap-x-3">
                   <Image src={i.image} alt="card" />
@@ -238,7 +238,7 @@ export default function Home() {
             ))
           }
 
-          <div className="absolute top-0 left-0 sm:left-10 -z-50">
+          <div className="absolute top-[6rem] left-0 sm:left-10 -z-50">
             <Image src={Char} alt="card" />
           </div>
 

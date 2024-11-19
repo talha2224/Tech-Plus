@@ -62,17 +62,15 @@ const Page = () => {
 
 
       <div className='my-[3rem] w-[100%] flex justify-center items-center flex-col'>
-        {
-          generalFaqData.map((i, index) => (
-            <div style={{ backgroundColor: index !== showGeneralFaqIndex ? "#fafafa" : "#0077B5" }} key={index} className={`w-[95%] md:w-[70%] rounded-md p-5 mb-2`}>
-              <div className='flex justify-between items-center'>
-                <p style={{ color: index === showGeneralFaqIndex ? "#ffff" : "#000" }} className={`${index !== showGeneralFaqIndex && "opacity-45"}`}>{i.title}</p>
-                <RiArrowDropDownLine onClick={() => toogleGeneralFaq(index)} style={{ color: index === showGeneralFaqIndex ? "#ffff" : "#0077B5" }} className={`text-[2.5rem] cursor-pointer`} />
-              </div>
-              <p className={`text-white ${index !== showGeneralFaqIndex ? "hidden" : "block mt-2"} `}>{i.description}</p>
+        {generalFaqData.map((i, index) => (
+          <div key={index}className={`w-[95%] md:w-[70%] rounded-md p-5 mb-2 overflow-hidden transition duration-300 ease-in-out`} style={{ backgroundColor: index !== showGeneralFaqIndex ? "#fafafa" : "#0077B5" }}>
+            <div className='flex justify-between items-center'>
+              <p style={{ color: index === showGeneralFaqIndex ? "#ffff" : "#000" }} className={`${index !== showGeneralFaqIndex && "opacity-45"}`}>{i.title}</p>
+              <RiArrowDropDownLine onClick={() => toogleGeneralFaq(index)} style={{ color: index === showGeneralFaqIndex ? "#ffff" : "#0077B5" }} className={`text-[2.5rem] cursor-pointer transition transform duration-300 ease-in-out ${index === showGeneralFaqIndex ? "rotate-180" : ""}`}/>
             </div>
-          ))
-        }
+            <p className={`text-white ${index !== showGeneralFaqIndex ? "h-0" : "h-auto mt-2"} transition duration-300 ease-in-out`}>{i.description}</p>
+          </div>
+        ))}
       </div>
 
 
@@ -83,12 +81,12 @@ const Page = () => {
       <div className='my-[3rem] w-[100%] flex justify-center items-center flex-col'>
         {
           sellerFaqData.map((i, index) => (
-            <div style={{ backgroundColor: index !== showSellerFaqIndex ? "#fafafa" : "#0077B5" }} key={index} className={`w-[95%] md:w-[70%] rounded-md p-5 mb-2`}>
+            <div style={{ backgroundColor: index !== showSellerFaqIndex ? "#fafafa" : "#0077B5" }} key={index} className={`w-[95%] md:w-[70%] rounded-md p-5 mb-2 overflow-hidden transition duration-300 ease-in-out`}>
               <div className='flex justify-between items-center'>
                 <p style={{ color: index === showSellerFaqIndex ? "#ffff" : "#000" }} className={`${index !== showSellerFaqIndex && "opacity-45"}`}>{i.title}</p>
-                <RiArrowDropDownLine onClick={() => toogleSellerrFaq(index)} style={{ color: index === showSellerFaqIndex ? "#ffff" : "#0077B5" }} className={`text-[2.5rem] cursor-pointer`} />
+                <RiArrowDropDownLine onClick={() => toogleSellerrFaq(index)} style={{ color: index === showSellerFaqIndex ? "#ffff" : "#0077B5" }} className={`text-[2.5rem] cursor-pointer transition transform duration-300 ease-in-out ${index === showSellerFaqIndex ? "rotate-180" : ""}`}/>
               </div>
-              <p className={`text-white ${index !== showSellerFaqIndex ? "hidden" : "block mt-2"} `}>{i.description}</p>
+              <p className={`text-white ${index !== showSellerFaqIndex ? "hidden" : "block mt-2"} transition duration-300 ease-in-out `}>{i.description}</p>
             </div>
           ))
         }
@@ -102,12 +100,12 @@ const Page = () => {
       <div className='my-[3rem] w-[100%] flex justify-center items-center flex-col'>
         {
           buyerFaqData.map((i, index) => (
-            <div style={{ backgroundColor: index !== showBuyerFaqIndex ? "#fafafa" : "#0077B5" }} key={index} className={`w-[95%] md:w-[70%] rounded-md p-5 mb-2`}>
+            <div style={{ backgroundColor: index !== showBuyerFaqIndex ? "#fafafa" : "#0077B5" }} key={index} className={`w-[95%] md:w-[70%] rounded-md p-5 mb-2 overflow-hidden transition duration-300 ease-in-out`}>
               <div className='flex justify-between items-center'>
                 <p style={{ color: index === showBuyerFaqIndex ? "#ffff" : "#000" }} className={`${index !== showBuyerFaqIndex && "opacity-45"}`}>{i.title}</p>
-                <RiArrowDropDownLine onClick={() => toogleBuyerFaq(index)} style={{ color: index === showBuyerFaqIndex ? "#ffff" : "#0077B5" }} className={`text-[2.5rem] cursor-pointer`} />
+                <RiArrowDropDownLine onClick={() => toogleBuyerFaq(index)} style={{ color: index === showBuyerFaqIndex ? "#ffff" : "#0077B5" }} className={`text-[2.5rem] cursor-pointer transition transform duration-300 ease-in-out ${index === showBuyerFaqIndex ? "rotate-180" : ""}`} />
               </div>
-              <p className={`text-white ${index !== showBuyerFaqIndex ? "hidden" : "block mt-2"} `}>{i.description}</p>
+              <p className={`text-white ${index !== showBuyerFaqIndex ? "hidden" : "block mt-2"} transition duration-300 ease-in-out `}>{i.description}</p>
             </div>
           ))
         }
