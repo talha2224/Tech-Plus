@@ -50,17 +50,17 @@ const page = () => {
         <h1 className='text-[2.3rem] font-semibold text-center'>Sell it your way</h1>
 
         <div className='flex justify-center items-center gap-x-5 mt-[2rem] flex-wrap'>
-          <div className='bg-white rounded-xl p-7 max-w-[20rem] min-w-[20rem] h-[20rem]'>
+          <div className='bg-white rounded-xl p-7 max-w-[20rem] min-w-[20rem] h-[20rem] mt-2'>
             <Image src={Card1} className='h-[2rem]' alt='card' />
             <h1 className='text-[1rem] font-semibold mt-[2rem]'>Set your price</h1>
             <p className='text-sm text-[#212833] mt-3'>First, decide on a price. Now that the hard part is out of the way, people can instantly buy your domain at your fixed price.</p>
           </div>
-          <div className='bg-white rounded-xl p-7 max-w-[20rem] min-w-[20rem] h-[20rem]'>
+          <div className='bg-white rounded-xl p-7 max-w-[20rem] min-w-[20rem] h-[20rem] mt-2'>
             <Image src={Card2} className='h-[2rem]' alt='card' />
             <h1 className='text-[1rem] font-semibold mt-[2rem]'>Get offers</h1>
             <p className='text-sm text-[#212833] mt-3'>Curious about what buyers are willing to pay for your domain? Start negotiations with the Make Offer option on your For Sale page. </p>
           </div>
-          <div className='bg-white rounded-xl p-7 max-w-[20rem] min-w-[20rem] h-[20rem]'>
+          <div className='bg-white rounded-xl p-7 max-w-[20rem] min-w-[20rem] h-[20rem] mt-2'>
             <Image src={Card3} className='h-[2rem]' alt='card' />
             <h1 className='text-[1rem] font-semibold mt-[2rem]'>Lease your domain name</h1>
             <p className='text-sm text-[#212833] mt-3'>Lease-to-Own lets buyers pay in installments, eventually becoming the domain’s owner. Everybody wins: buyers can afford the domain, you get more and recurring revenue</p>

@@ -89,7 +89,7 @@ export default function Home() {
 
       {/* CARDS  */}
 
-      <div className="sm:px-10 px-3 pb-10 z-50 mt-[-10rem]">
+      <div className="sm:px-10 px-3 pb-10 z-50 mt-[-15rem] sm:mt-[-10rem]">
 
         <div className="flex sm:justify-evenly items-center flex-wrap">
 
@@ -176,7 +176,7 @@ export default function Home() {
 
       <div style={{ backgroundImage: `url('/asessts/bg.png')` }} className="bg-no-repeat w-[100vw] bg-cover mt-[3rem] flex justify-center items-center flex-col">
 
-        <h1 className="text-center text-white font-medium text-[2rem] pt-16">3 easy steps to buy a domain</h1>
+        <h1 className="text-center text-white font-semibold text-[2rem] pt-16">3 Easy Steps To Buy A Domain</h1>
 
         <div className="flex- gap-x-6 w-[100%] flex justify-center items-end mt-[3rem] flex-wrap">
 
@@ -206,7 +206,7 @@ export default function Home() {
       {/* TESTIMONIALS  */}
 
       <div className="mt-[4rem] flex justify-center items-center flex-col relative">
-        <h1 className="text-[2rem] font-medium">What Our User Say</h1>
+        <h1 className="text-[2rem]">What Our User Say</h1>
         <p className="text-[#3a4270] mt-2 text-sm">Would you like to add your review? </p>
 
 
